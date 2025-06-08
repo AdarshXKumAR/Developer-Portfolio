@@ -4,510 +4,284 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhishek Adarsh - Frontend Developer</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Developer Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="static/styles.css">
 
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
 </head>
 
 <body data-theme="dark">
-    <!-- Cursor Follower -->
-    <div class="cursor-dot" data-cursor-dot></div>
-    <div class="cursor-outline" data-cursor-outline></div>
-
     <!-- Animated Background -->
     <div class="bg-animation">
-        <div class="gradient-orbs">
-            <div class="orb orb-1"></div>
-            <div class="orb orb-2"></div>
-            <div class="orb orb-3"></div>
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
         </div>
-        <div class="grid-pattern"></div>
     </div>
 
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">AA</span>
-            </div>
-            <div class="nav-links">
-                <a href="#home" class="nav-link" data-text="Home">Home</a>
-                <a href="#about" class="nav-link" data-text="About">About</a>
-                <a href="#projects" class="nav-link" data-text="Projects">Projects</a>
-                <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
-            </div>
-            <div class="nav-controls">
-                <div class="theme-toggle" onclick="toggleTheme()">
-                    <div class="toggle-track">
-                        <div class="toggle-thumb">
-                            <i class="fas fa-sun sun-icon"></i>
-                            <i class="fas fa-moon moon-icon"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="mobile-menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
+    <nav>
+        <div class="nav-links glass">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="theme-toggle" onclick="toggleTheme()">
+            <i class="fas fa-sun theme-icon sun"></i>
+            <i class="fas fa-moon theme-icon moon"></i>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span class="badge-dot"></span>
-                    <span class="badge-text">Available for work</span>
-                </div>
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        <span class="title-line">
-                            <span class="word">Hello,</span>
-                            <span class="word">I'm</span>
-                        </span>
-                        <span class="title-line">
-                            <span class="word gradient-text">Abhishek</span>
-                            <span class="word gradient-text">Adarsh</span>
-                        </span>
-                    </h1>
-                    <div class="hero-subtitle">
-                        <span class="typing-text"></span>
-                        <span class="cursor-blink">|</span>
-                    </div>
-                    <p class="hero-description">
-                        Passionate computer science student crafting innovative digital solutions. 
-                        I transform complex problems into elegant code, building everything from 
-                        AI-powered applications to seamless web experiences.
-                    </p>
-                </div>
-                <div class="hero-actions">
-                    <a href="#projects" class="btn btn-primary">
-                        <span class="btn-text">View My Work</span>
-                        <div class="btn-icon">
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                    </a>
-                    <a href="#" class="btn btn-secondary" onclick="downloadResume()">
-                        <span class="btn-text">Download CV</span>
-                        <div class="btn-icon">
-                            <i class="fas fa-download"></i>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="profile-container">
-                    <div class="profile-ring">
-                        <div class="profile-image">
-                            <img src="/assets/WhatsApp Image 2025-05-28 at 17.11.53_9a01b3fd.jpg" alt="Abhishek Adarsh">
-                        </div>
-                    </div>
-                    <div class="floating-elements">
-                        <div class="floating-icon" style="--delay: 0s">
-                            <i class="fab fa-react"></i>
-                        </div>
-                        <div class="floating-icon" style="--delay: 1s">
-                            <i class="fab fa-python"></i>
-                        </div>
-                        <div class="floating-icon" style="--delay: 2s">
-                            <i class="fab fa-js-square"></i>
-                        </div>
-                        <div class="floating-icon" style="--delay: 3s">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                    </div>
-                </div>
+        <div class="hero-content fade-in">
+            <div class="role-title">Frontend Developer</div>
+            <div class="greeting">Hello I'm</div>
+            <h1>Abhishek Adarsh</h1>
+            <p>Passionate computer science student crafting innovative digital solutions. I transform complex problems
+                into elegant code, building everything from AI-powered applications to seamless web experiences.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    View Projects
+                </a>
+                <a href="#" class="btn btn-secondary" onclick="downloadResume()">
+                    <i class="fas fa-download"></i>
+                    Download Resume
+                </a>
             </div>
         </div>
-        
-        <!-- Stats Section -->
-        <div class="stats-section">
-            <div class="stats-container">
-                <div class="stat-item">
-                    <div class="stat-number" data-target="3">0</div>
-                    <div class="stat-label">Years Experience</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-target="15">0</div>
-                    <div class="stat-label">Projects Completed</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-target="8">0</div>
-                    <div class="stat-label">Technologies</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-target="100">0</div>
-                    <div class="stat-label">Code Commits</div>
-                </div>
+        <div class="hero-image fade-in">
+            <div class="hero-profile">
+                <i class="fas fa-code"></i>
             </div>
         </div>
     </section>
 
+    <!-- Stats Section -->
+    <div class="stats-grid">
+        <div class="stat-item glass fade-in">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Years of experience</span>
+        </div>
+        <div class="stat-item glass fade-in">
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Projects completed</span>
+        </div>
+        <div class="stat-item glass fade-in">
+            <span class="stat-number">8</span>
+            <span class="stat-label">Technologies mastered</span>
+        </div>
+        <div class="stat-item glass fade-in">
+            <span class="stat-number">100+</span>
+            <span class="stat-label">Code commits</span>
+        </div>
+    </div>
+
     <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="section-container">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <span class="title-number">01.</span>
-                    About Me
-                </h2>
-                <div class="section-line"></div>
+    <section id="about" class="section">
+        <h2 class="fade-in">About Me</h2>
+        <div class="about-content fade-in">
+            <div class="about-image">
+                <div class="profile-pic">
+                    <img src="/assets/WhatsApp Image 2025-05-28 at 17.11.53_9a01b3fd.jpg">
+                </div>
             </div>
-            
-            <div class="about-content">
-                <div class="about-text">
-                    <div class="text-block">
-                        <h3 class="about-subtitle">The Creative Problem Solver</h3>
-                        <p>I'm a passionate B.Tech student specializing in Electronics and Computer Science Engineering at KIIT, Odisha. My journey in tech started with curiosity and evolved into a mission to create meaningful digital solutions.</p>
-                    </div>
-                    <div class="text-block">
-                        <p>With expertise spanning from AI-powered applications to full-stack web development, I love tackling complex challenges and turning innovative ideas into reality. I've built everything from real-time voice translators to intelligent web scrapers.</p>
-                    </div>
-                    <div class="text-block">
-                        <p>When I'm not coding, you'll find me exploring the latest in machine learning, contributing to open source, or brainstorming the next breakthrough project that could make a real difference.</p>
-                    </div>
-                </div>
-                
-                <div class="skills-showcase">
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <div class="category-icon">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <h4>Programming</h4>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Python</span>
-                                <span class="skill-tag">JavaScript</span>
-                                <span class="skill-tag">Java</span>
-                                <span class="skill-tag">C</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-category">
-                            <div class="category-icon">
-                                <i class="fas fa-globe"></i>
-                            </div>
-                            <h4>Web Development</h4>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Flask</span>
-                                <span class="skill-tag">Node.js</span>
-                                <span class="skill-tag">HTML5</span>
-                                <span class="skill-tag">CSS3</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-category">
-                            <div class="category-icon">
-                                <i class="fas fa-brain"></i>
-                            </div>
-                            <h4>AI & Machine Learning</h4>
-                            <div class="skill-tags">
-                                <span class="skill-tag">TensorFlow</span>
-                                <span class="skill-tag">Keras</span>
-                                <span class="skill-tag">Scikit-learn</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-category">
-                            <div class="category-icon">
-                                <i class="fas fa-database"></i>
-                            </div>
-                            <h4>Databases</h4>
-                            <div class="skill-tags">
-                                <span class="skill-tag">MySQL</span>
-                                <span class="skill-tag">MongoDB</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="about-text">
+                <h3>The Creative Problem Solver</h3>
+                <p>I'm a passionate B.Tech student specializing in Electronics and Computer Science Engineering at KIIT,
+                    Odisha. My journey in tech started with curiosity and evolved into a mission to create meaningful
+                    digital solutions.</p>
+                <p>With expertise spanning from AI-powered applications to full-stack web development, I love tackling
+                    complex challenges and turning innovative ideas into reality. I've built everything from real-time
+                    voice translators to intelligent web scrapers.</p>
+                <p>When I'm not coding, you'll find me exploring the latest in machine learning, contributing to open
+                    source, or brainstorming the next breakthrough project that could make a real difference.</p>
+            </div>
+        </div>
+
+        <div class="skills-grid fade-in">
+            <div class="skill-card glass">
+                <h4><i class="fas fa-code"></i> Programming</h4>
+                <p>Python, Java, C, JavaScript</p>
+            </div>
+            <div class="skill-card glass">
+                <h4><i class="fas fa-globe"></i> Web Development</h4>
+                <p>Flask, Node.js, HTML, CSS</p>
+            </div>
+            <div class="skill-card glass">
+                <h4><i class="fas fa-brain"></i> AI & ML</h4>
+                <p>TensorFlow, Keras, Scikit-learn</p>
+            </div>
+            <div class="skill-card glass">
+                <h4><i class="fas fa-database"></i> Databases</h4>
+                <p>MySQL, MongoDB</p>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <div class="section-container">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <span class="title-number">02.</span>
-                    Featured Projects
-                </h2>
-                <div class="section-line"></div>
+    <section id="projects" class="section">
+        <h2 class="fade-in">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card glass fade-in">
+                <h3><i class="fas fa-language"></i> VoiceXChange</h3>
+                <p>Real-time AI voice translator supporting 7 languages with 90%+ accuracy. Features server-side
+                    processing with Flask backend and natural-sounding speech synthesis.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">AssemblyAI</span>
+                    <span class="tech-tag">Google Translator</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/AdarshXKumAR/AI-Voice-Translator"><i
+                            class="fas fa-external-link-alt"></i> Live Demo</a>
+                    <a href="https://github.com/AdarshXKumAR/AI-Voice-Translator"><i class="fab fa-github"></i>
+                        GitHub</a>
+                </div>
             </div>
-            
-            <div class="projects-grid">
-                <div class="project-card featured">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/AdarshXKumAR/AI-Voice-Translator" class="project-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="https://github.com/AdarshXKumAR/AI-Voice-Translator" class="project-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-icon">
-                            <i class="fas fa-language"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3 class="project-title">VoiceXChange</h3>
-                            <span class="project-type">Featured Project</span>
-                        </div>
-                        <p class="project-description">
-                            Real-time AI voice translator supporting 7 languages with 90%+ accuracy. 
-                            Features server-side processing with Flask backend and natural-sounding speech synthesis.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-item">Python</span>
-                            <span class="tech-item">Flask</span>
-                            <span class="tech-item">AssemblyAI</span>
-                            <span class="tech-item">Google Translator</span>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/AdarshXKumAR/YouTube-Comment-Sentiment-Analyzer" class="project-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="https://github.com/AdarshXKumAR/YouTube-Comment-Sentiment-Analyzer" class="project-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">YouTube Sentiment Analyzer</h3>
-                        <p class="project-description">
-                            NLP-powered tool that analyzes YouTube comments, classifies sentiment, 
-                            and provides interactive visualizations with polarity trends.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-item">FastAPI</span>
-                            <span class="tech-item">TextBlob</span>
-                            <span class="tech-item">Chart.js</span>
-                            <span class="tech-item">Pandas</span>
-                        </div>
-                    </div>
+            <div class="project-card glass fade-in">
+                <h3><i class="fas fa-chart-line"></i> YouTube Sentiment Analyzer</h3>
+                <p>NLP-powered tool that analyzes YouTube comments, classifies sentiment, and provides interactive
+                    visualizations with polarity trends and distribution charts.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">FastAPI</span>
+                    <span class="tech-tag">TextBlob</span>
+                    <span class="tech-tag">Chart.js</span>
+                    <span class="tech-tag">Pandas</span>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/AdarshXKumAR/Web-Scrapper-AI-Assistant" class="project-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="https://github.com/AdarshXKumAR/Web-Scrapper-AI-Assistant" class="project-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-icon">
-                            <i class="fas fa-globe"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Web Scrape AI Assistant</h3>
-                        <p class="project-description">
-                            Intelligent web scraping tool with LLM integration for content extraction 
-                            and analysis. Features responsive UI with model-switching.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-item">Python</span>
-                            <span class="tech-item">Gemini API</span>
-                            <span class="tech-item">BeautifulSoup</span>
-                            <span class="tech-item">Tailwind CSS</span>
-                        </div>
-                    </div>
+                <div class="project-links">
+                    <a href="https://github.com/AdarshXKumAR/YouTube-Comment-Sentiment-Analyzer"><i
+                            class="fas fa-external-link-alt"></i> Live Demo</a>
+                    <a href="https://github.com/AdarshXKumAR/YouTube-Comment-Sentiment-Analyzer"><i
+                            class="fab fa-github"></i> GitHub</a>
                 </div>
+            </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/AdarshXKumAR/Student-Portal" class="project-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="https://github.com/AdarshXKumAR/Student-Portal" class="project-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Student Portal</h3>
-                        <p class="project-description">
-                            NLP-powered database query application allowing natural language 
-                            interactions with MySQL. Features secure authentication.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-item">Flask</span>
-                            <span class="tech-item">MySQL</span>
-                            <span class="tech-item">Gemini API</span>
-                            <span class="tech-item">Bootstrap</span>
-                        </div>
-                    </div>
+            <div class="project-card glass fade-in">
+                <h3><i class="fas fa-globe"></i> Web Scrape AI Assistant</h3>
+                <p>Intelligent web scraping tool with LLM integration for content extraction and analysis. Features
+                    responsive UI with model-switching and real-time markdown rendering.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Gemini API</span>
+                    <span class="tech-tag">BeautifulSoup</span>
+                    <span class="tech-tag">Tailwind CSS</span>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://adarshxkumar.github.io/Weather-Dashboard/" class="project-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="https://github.com/AdarshXKumAR/Weather-Dashboard" class="project-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-icon">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Weather Dashboard</h3>
-                        <p class="project-description">
-                            Modern, responsive weather forecasting web application with real-time 
-                            data, 5-day forecasts, and location detection.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-item">HTML5</span>
-                            <span class="tech-item">CSS3</span>
-                            <span class="tech-item">JavaScript</span>
-                            <span class="tech-item">OpenWeather API</span>
-                        </div>
-                    </div>
+                <div class="project-links">
+                    <a href="https://github.com/AdarshXKumAR/Web-Scrapper-AI-Assistant"><i
+                            class="fas fa-external-link-alt"></i> Live Demo</a>
+                    <a href="https://github.com/AdarshXKumAR/Web-Scrapper-AI-Assistant"><i class="fab fa-github"></i>
+                        GitHub</a>
                 </div>
+            </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://adarshxkumar.github.io/CollegeTips.in-PhotoGallery/" class="project-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="https://github.com/AdarshXKumAR/CollegeTips.in-PhotoGallery" class="project-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-icon">
-                            <i class="fas fa-image"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">CollegeTips PhotoGallery</h3>
-                        <p class="project-description">
-                            Responsive and themeable photo gallery with dynamic image rendering, 
-                            category filters, modal view, and dark/light mode support.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-item">HTML5</span>
-                            <span class="tech-item">CSS3</span>
-                            <span class="tech-item">Vanilla JS</span>
-                        </div>
-                    </div>
+            <div class="project-card glass fade-in">
+                <h3><i class="fas fa-graduation-cap"></i> Student Portal</h3>
+                <p>NLP-powered database query application allowing natural language interactions with MySQL. Features
+                    secure authentication and performance-based grade visualization.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">Gemini API</span>
+                    <span class="tech-tag">Bootstrap</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/AdarshXKumAR/Student-Portal"><i class="fas fa-external-link-alt"></i>
+                        Live Demo</a>
+                    <a href="https://github.com/AdarshXKumAR/Student-Portal"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+            <div class="project-card glass fade-in">
+                <h3><i class="fas fa-cloud"></i> Weather Dashboard</h3>
+                <p>A modern, responsive weather forecasting web application built with vanilla JavaScript. Features
+                    real-time weather data, 5-day forecasts, hourly predictions, and current location detection.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript (ES6+)</span>
+                    <span class="tech-tag">OpenWeatherMap API</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://adarshxkumar.github.io/Weather-Dashboard/"><i class="fas fa-external-link-alt"></i>
+                        Live Demo</a>
+                    <a href="https://github.com/AdarshXKumAR/Weather-Dashboard"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+            <div class="project-card glass fade-in">
+                <h3><i class="fas fa-image"></i> CollegeTips PhotoGallery</h3>
+                <p>A responsive and themeable photo gallery web app built with HTML, CSS, and JavaScript. Showcases
+                    dynamic image rendering, category filters, modal view, and dark/light mode support.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">Vanilla JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://adarshxkumar.github.io/CollegeTips.in-PhotoGallery/"><i
+                            class="fas fa-external-link-alt"></i> Live Demo</a>
+                    <a href="https://github.com/AdarshXKumAR/CollegeTips.in-PhotoGallery"><i class="fab fa-github"></i>
+                        GitHub</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="section-container">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <span class="title-number">03.</span>
-                    Let's Connect
-                </h2>
-                <div class="section-line"></div>
+<section id="contact" class="section">
+    <h2 class="fade-in">Let's Connect</h2>
+    <div class="contact-content fade-in">
+        <p>Ready to collaborate on something amazing? Whether it's a project, job opportunity, or just a tech chat -
+            I'm always excited to connect with fellow developers and innovators!</p>
+
+        <form class="contact-form glass" id="contactForm">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" required>
             </div>
-            
-            <div class="contact-content">
-                <div class="contact-text">
-                    <h3 class="contact-subtitle">Ready to collaborate?</h3>
-                    <p class="contact-description">
-                        Whether it's a project, job opportunity, or just a tech chat - 
-                        I'm always excited to connect with fellow developers and innovators!
-                    </p>
-                </div>
-                
-                <div class="contact-form-container">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" required>
-                                <span class="form-line"></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required>
-                                <span class="form-line"></span>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                            <span class="form-line"></span>
-                        </div>
-                        <button type="submit" class="btn btn-primary submit-btn">
-                            <span class="btn-text">Send Message</span>
-                            <div class="btn-icon">
-                                <i class="fas fa-paper-plane"></i>
-                            </div>
-                        </button>
-                    </form>
-                </div>
-                
-                <div class="social-links">
-                    <a href="mailto:adarsh0670@gmail.com" class="social-link" data-tooltip="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/abhishekadarsh0670" class="social-link" data-tooltip="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/AdarshXKumAR" class="social-link" data-tooltip="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.instagram.com/ig__adarshkumar" class="social-link" data-tooltip="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Your Email" required>
             </div>
+            <div class="form-group">
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i>
+                Send Message
+            </button>
+        </form>
+
+        <div class="social-links">
+            <a href="mailto:adarsh0670@gmail.com" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://linkedin.com/in/abhishekadarsh0670" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/AdarshXKumAR" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/ig__adarshkumar" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2025 Abhishek Adarsh. Crafted with <i class="fas fa-heart"></i> and lots of <i class="fas fa-coffee"></i></p>
-        </div>
+    <footer>
+        <p>&copy; 2025 Abhishek Adarsh. Crafted with <i class="fas fa-heart" style="color: var(--accent);"></i> and lots
+            of <i class="fas fa-coffee" style="color: var(--accent);"></i></p>
     </footer>
 
     <script src="static/script.js"></script>
