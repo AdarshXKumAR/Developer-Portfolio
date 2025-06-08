@@ -16,7 +16,7 @@ A sleek, modern developer portfolio website built with vanilla HTML, CSS, and Ja
 
 ## 🚀 Demo
 
-[Live Demo](https://rainbow-semifreddo-be1ac2.netlify.app/)
+[Live Demo](https://effulgent-sorbet-b31f09.netlify.app/)
 
 ## 📸 Screenshots
 
